@@ -1,7 +1,7 @@
-const number = -123;
-const pi = 3.141592;
+const a = 0.1;
+const b = 0.2;
 
-console.log(number + undefined); //NaN(Not a Number)
-console.log(typeof(number + undefined)); // number
-console.log(pi);
-console.log(typeof pi); //number
+console.log(a+b); // 0.30000000000000004
+console.log(typeof (a+b).toFixed(1)); //String
+console.log(Number((a+b).toFixed(1))); // Number
+console.log(typeof Number((a+b).toFixed(1))); // Number
