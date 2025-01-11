@@ -54,3 +54,43 @@ console.log(user3['name']); // 대괄호 표기법 - 변수로 속성을 인덱�
 // - 객체 데이터 내부에 들어 있는 각각 속성들의 Key는 고유하다.
 // - Key는 순서라는 개념이 존재하지 않다. 
 // - Key는 중복을 허용하지 않는다.
+
+
+// Fucntion(함수)
+// 1. 기명함수
+function hello() {
+  console.log('Hello!!!');
+}
+
+hello(); //호출, Hello!!!
+hello // 함수 데이터
+console.log(hello); // ƒ hello() { console.log('Hello!!!');}
+
+// 1-1. 함수 != 함수 데이터
+function getNumber() {
+  return 123;
+}
+
+console.log(typeof getNumber); // function
+console.log(typeof getNumber()); // number
+
+// 2. 익명함수
+const getNumber2 = function() {
+  return 123;
+}
+console.log(typeof getNumber2); // function
+console.log(typeof getNumber2()); // number
+
+// 2-1. 응용
+// - 함수는 자바스크립트 데이터
+// - 함수 자체와 함수의 호출은 별개다.
+const a = function() {
+  console.log('A');
+}
+
+const b = function(c) {
+  console.log(c); // ƒ () { console.log('A'); }
+  c(); // = a()와 동일하다
+}
+
+b(a); // A

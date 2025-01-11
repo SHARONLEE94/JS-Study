@@ -1,3 +1,4 @@
 # 용량이 큼, npm install를 사용해 다운이 가능함.
 node_modules
 dist
+.parcel-cache
