@@ -4,7 +4,7 @@ const hello = () => {
   console.log('hello~');
 }
 
-// 1. setTimeout() , clearTimeout()
+// 1. setTimeout(), clearTimeout()
 const timeout = setTimeout(hello, 2000);
 const h1El = document.querySelector('h2');
 h1El.addEventListener('click', () => {
@@ -20,3 +20,5 @@ h1El2.addEventListener('click', () => {
   console.log('Clear!');
   clearInterval(timeout2);
 })
+
+// 3. 
